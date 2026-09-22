@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Coffee Finder</string>
+    <string name="titulo">Coffee Finder</string>
+    <string name="pregunta">"Qué che apetece? "</string>
+    <string name="recomendar">Recoméndame</string>
+    <!-- El orden importa: la posición de cada opción decide la recomendación -->
+    <string-array name="tipos_cafe">
+        <item>Algo intenso</item>
+        <item>Algo suave e doce</item>
+        <item>Algo frío</item>
+        <item>Sorpréndeme</item>
+    </string-array>
+</resources>
