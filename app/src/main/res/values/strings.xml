@@ -3,6 +3,18 @@
     <string name="titulo">One More Coffee</string>
     <string name="pregunta">¿Qué te apetece?</string>
     <string name="recomendar">Recomiéndame!</string>
+    <string name="ao_chou">Ao chou</string>
+
+    <string name="titulo_seleccion">One More Coffee</string>
+    <string name="titulo_resultado">Recomendacións</string>
+    <plurals name="recomendacions">
+        <item quantity="one">%1$d recomendación para «%2$s»</item>
+        <item quantity="other">%1$d recomendacións para «%2$s»</item>
+    </plurals>
+
+    <string name="titulo_detalle">O teu café</string>
+    <string name="foto_cafe">Foto do café</string>
+
     <!-- El orden importa: la posición de cada opción decide la recomendación -->
     <string-array name="tipos_cafe">
         <item>Algo intenso</item>
@@ -10,4 +22,23 @@
         <item>Algo frío</item>
         <item>Sorpréndeme</item>
     </string-array>
+
+
+    <string-array name="curiosidades">
+        <item>Un grao de café é a semente dun froito vermello, a cereixa do café.</item>
+        <item>Brasil é o maior produtor de café do mundo.</item>
+        <item>A arábica ten máis ou menos a metade de cafeína ca robusta.</item>
+        <item>O cold brew infúndese en frío entre 12 e 24 horas.</item>
+        <item>O capuchino toma o nome da cor do hábito dos frades capuchinos.</item>
+        <item>A primeira máquina de espresso patentouse en Italia a comezos do século XX.</item>
+    </string-array>
+
+    <string name="sabias_que">Sabías que…?</string> .
+    <string-array name="descricions_tipo">
+        <item>Curto, concentrado e con carácter.</item>
+        <item>Con leite, escuma e un punto doce.</item>
+        <item>Con xeo, para os días de calor.</item>
+        <item>Déixate levar: o de sempre nunca falla.</item>
+    </string-array>
+
 </resources>

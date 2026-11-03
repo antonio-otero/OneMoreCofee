@@ -1,30 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <path android:pathData="M31,63.928c0,0 6.4,-11 12.1,-13.1c7.2,-2.6 26,-1.4 26,-1.4l38.1,38.1L107,108.928l-32,-1L31,63.928z">
-        <aapt:attr name="android:fillColor">
-            <gradient
-                android:endX="85.84757"
-                android:endY="92.4963"
-                android:startX="42.9492"
-                android:startY="49.59793"
-                android:type="linear">
-                <item
-                    android:color="#44000000"
-                    android:offset="0.0" />
-                <item
-                    android:color="#00000000"
-                    android:offset="1.0" />
-            </gradient>
-        </aapt:attr>
-    </path>
+
+    <!-- Sombra suave bajo la taza -->
     <path
-        android:fillColor="#FFFFFF"
-        android:fillType="nonZero"
-        android:pathData="M65.3,45.828l3.8,-6.6c0.2,-0.4 0.1,-0.9 -0.3,-1.1c-0.4,-0.2 -0.9,-0.1 -1.1,0.3l-3.9,6.7c-6.3,-2.8 -13.4,-2.8 -19.7,0l-3.9,-6.7c-0.2,-0.4 -0.7,-0.5 -1.1,-0.3C38.8,38.328 38.7,38.828 38.9,39.228l3.8,6.6C36.2,49.428 31.7,56.028 31,63.928h46C76.3,56.028 71.8,49.428 65.3,45.828zM43.4,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2c-0.3,-0.7 -0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C45.3,56.528 44.5,57.328 43.4,57.328L43.4,57.328zM64.6,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2s-0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C66.5,56.528 65.6,57.328 64.6,57.328L64.6,57.328z"
-        android:strokeWidth="1"
-        android:strokeColor="#00000000" />
+        android:fillColor="#40000000"
+        android:pathData="M54,56m-25,0a25,25 0,1 1,50 0a25,25 0,1 1,-50 0" />
+
+    <!-- Asa de la taza (orientada a la derecha/arriba) -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M73,44 C82,44 82,58 73,58"
+        android:strokeWidth="5.5"
+        android:strokeColor="#F5EBE6"
+        android:strokeLineCap="round" />
+
+    <!-- Cuerpo exterior de la taza (Porcelana crema) -->
+    <path
+        android:fillColor="#F5EBE6"
+        android:pathData="M54,54m-24,0a24,24 0,1 1,48 0a24,24 0,1 1,-48 0" />
+
+    <!-- Interior del café (Crema / Tueste medio) -->
+    <path
+        android:fillColor="#6F4E37"
+        android:pathData="M54,54m-20,0a20,20 0,1 1,40 0a20,20 0,1 1,-40 0" />
+
+    <!-- Aro interior de crema dorada (Espuma del espresso) -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M54,54m-17,0a17,17 0,1 1,34 0a17,17 0,1 1,-34 0"
+        android:strokeWidth="2"
+        android:strokeColor="#D4A373" />
+
+    <!-- Grano de café central estilizado -->
+    <path
+        android:fillColor="#2C1810"
+        android:pathData="M48,43 C41,47 41,61 48,65 C55,69 61,61 58,54 C55,47 55,39 48,43 Z" />
+
+    <!-- Hendidura curva del grano de café (color crema) -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M48,45 C52,50 47,58 51,63"
+        android:strokeWidth="2"
+        android:strokeColor="#D4A373"
+        android:strokeLineCap="round" />
+
+    <!-- Detalle '+1' ("One More") en tono espuma brillante -->
+    <!-- Símbolo '+' -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M62,48 L68,48 M65,45 L65,51"
+        android:strokeWidth="2.2"
+        android:strokeColor="#FFF8F0"
+        android:strokeLineCap="round" />
+
+    <!-- Vapor ascendente superior (toque cálido) -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M48,26 Q51,22 48,18 M56,25 Q59,21 56,17"
+        android:strokeWidth="2"
+        android:strokeColor="#80D4A373"
+        android:strokeLineCap="round" />
+
 </vector>

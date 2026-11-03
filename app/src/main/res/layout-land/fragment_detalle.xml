@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiaFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.45" />
+    <ImageView
+        android:id="@+id/ivCafe"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/foto_cafe"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guiaFoto"
+        tools:src="@drawable/cafe_ristretto" />
+    <TextView
+        android:id="@+id/tvNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guiaFoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Espresso doble ristretto" />
+    <RatingBar
+        android:id="@+id/rbIntensidade"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="1"
+        android:progressTint="@color/cor_secundaria"
+        app:layout_constraintTop_toBottomOf="@id/tvNome"
+        app:layout_constraintStart_toEndOf="@id/guiaFoto"
+        tools:rating="5" />
+    <TextView
+        android:id="@+id/tvDescricion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/rbIntensidade"
+        app:layout_constraintStart_toEndOf="@id/guiaFoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Extracción curta e concentrada." />
+</androidx.constraintlayout.widget.ConstraintLayout>

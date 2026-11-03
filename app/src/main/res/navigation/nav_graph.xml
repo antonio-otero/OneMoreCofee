@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/seleccionFragment">
+
+    <fragment
+        android:id="@+id/seleccionFragment"
+        android:name="com.example.onemorecofee.SeleccionFragment"
+        android:label="@string/titulo_seleccion"
+        tools:layout="@layout/fragment_seleccion">
+
+        <action
+            android:id="@+id/accion_seleccion_a_resultado"
+            app:destination="@id/resultadoFragment"
+            app:enterAnim="@anim/entrar_dereita"
+            app:exitAnim="@anim/sair_esquerda"
+            app:popEnterAnim="@anim/entrar_esquerda"
+            app:popExitAnim="@anim/sair_dereita" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultadoFragment"
+        android:name="com.example.onemorecofee.ResultadoFragment"
+        android:label="@string/titulo_resultado"
+        tools:layout="@layout/fragment_resultado">
+        <argument
+            android:name="tipo"
+            app:argType="integer" />
+        <action
+            android:id="@+id/accion_resultado_a_detalle"
+            app:destination="@id/detalleFragment"
+            app:enterAnim="@anim/entrar_dereita"
+            app:exitAnim="@anim/sair_esquerda"
+            app:popEnterAnim="@anim/entrar_esquerda"
+            app:popExitAnim="@anim/sair_dereita" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalleFragment"
+        android:name="com.example.onemorecofee.DetalleFragment"
+        android:label="@string/titulo_detalle"
+        tools:layout="@layout/fragment_detalle">
+        <argument
+            android:name="tipo"
+            app:argType="integer" />
+        <argument
+            android:name="indice"
+            app:argType="integer" />
+    </fragment>
+
+
+</navigation>
